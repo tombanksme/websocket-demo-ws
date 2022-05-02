@@ -1,0 +1,16 @@
+config:
+    target: 'ws://localhost:8080'
+    phases:
+        - duration: 10
+          arrivalRate: 20
+        - duration: 100
+          arrivalRate: 100
+        - duration: 10
+          arrivalRate: 20
+scenarios:
+    - engine: ws
+      flow:
+          - loop:
+                - send: 'Hello World'
+                  think: 5
+            count: 10

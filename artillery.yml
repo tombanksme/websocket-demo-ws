@@ -1,5 +1,5 @@
 config:
-    target: 'ws://localhost:8080'
+    target: 'ws://159.223.154.40:8080'
     phases:
         - duration: 10
           arrivalRate: 20
